@@ -29,7 +29,7 @@ export default () => {
             if (user) dispatch(setUser(user));
           } catch (e) {
             console.log("e", e);
-            toast.error("Wrong login", e.code);
+            toast.error("Error with signup", e.code);
           }
           actions.setSubmitting(false);
         }}>
